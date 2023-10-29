@@ -24,3 +24,5 @@ veeam_install:
       netmask: 255.255.255.0
       gateway: 10.21.237.1
       dns: 10.21.93.16
+
+# made some changes on 2:46, 10/29 on "br1" branch
