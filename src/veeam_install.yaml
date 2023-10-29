@@ -1,0 +1,26 @@
+---
+VCenter:
+    vcenter_name: srdemo-vc.puretec.purestorage.com 
+    vcenter_user: administrator@vsphere.local
+    vcenter_pw: Osmium76$!
+    ssl-check: False 
+    datacenter: mdp-datacenter
+    folder: d02-vms
+    base_vmname: veeam-serv 
+    hostname_update: False 
+    power_on: True
+    snapshot_name: None 
+
+veeam_install:
+    - esx: sn1-r6515-h01-02.puretec.purestorage.com
+      template: veeam-serv-template1
+      datastore: m70-3-vdi-2 
+      vm_user: Administrator
+      vm_password: Osmium76!
+      vm_count: 1 
+      network: Servers-2237
+#      ip1: 10.21.237.141
+      ip1: 10.21.237.165
+      netmask: 255.255.255.0
+      gateway: 10.21.237.1
+      dns: 10.21.93.16
